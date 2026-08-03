@@ -1,6 +1,6 @@
 {
   "name": "@opoha/plugin-sample",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Minimal sample plugin for Opoha loader integration tests (D-11)",
   "license": "MIT",
   "type": "module",
@@ -18,7 +18,7 @@
   ],
   "opoha": {
     "id": "sample",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "contractVersion": "0.1",
     "entry": "dist/index.js",
     "displayName": "Sample Plugin",
