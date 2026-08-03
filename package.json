@@ -1,0 +1,49 @@
+{
+  "name": "@opoha/plugin-sample",
+  "version": "0.1.0",
+  "description": "Minimal sample plugin for Opoha loader integration tests (D-11)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "opoha.plugin.json"
+  ],
+  "opoha": {
+    "id": "sample",
+    "version": "0.1.0",
+    "contractVersion": "0.1",
+    "entry": "dist/index.js",
+    "displayName": "Sample Plugin",
+    "description": "Registers ping GraphQL, a permission, and PluginSampleEvent listener",
+    "dependsOn": [],
+    "required": false
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@opoha/plugin-sdk": "file:../opoha-plugin-sdk"
+  },
+  "devDependencies": {
+    "@opoha/typescript-config": "file:../opoha-devkit/packages/typescript-config",
+    "@opoha/vitest-config": "file:../opoha-devkit/packages/vitest-config",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  },
+  "packageManager": "pnpm@11.7.0"
+}

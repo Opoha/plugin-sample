@@ -1,0 +1,10 @@
+{
+  "id": "sample",
+  "version": "0.1.0",
+  "contractVersion": "0.1",
+  "entry": "dist/index.js",
+  "displayName": "Sample Plugin",
+  "description": "Minimal sample for loader integration — ping query, permission, PluginSampleEvent",
+  "dependsOn": [],
+  "required": false
+}
