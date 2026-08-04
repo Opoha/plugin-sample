@@ -4,7 +4,7 @@ import { definePlugin } from '@opoha/plugin-sdk';
 export const PLUGIN_SAMPLE_EVENT = 'PluginSampleEvent' as const;
 
 /**
- * Minimal official-shaped sample plugin for loader integration tests (D-11).
+ * Minimal official-shaped sample plugin for loader integration tests.
  * Registers: GraphQL ping query, one permission, one PluginSampleEvent listener.
  */
 export default definePlugin({

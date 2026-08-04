@@ -1,6 +1,6 @@
 # Sample Plugin
 
-Minimal `@opoha/plugin-sample` used to prove the Opoha plugin loader (MVP D-11).
+Minimal `@opoha/plugin-sample` used to prove the Opoha plugin loader.
 
 ## What it registers
 
