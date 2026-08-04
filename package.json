@@ -1,7 +1,7 @@
 {
   "name": "@opoha/plugin-sample",
-  "version": "1.0.1",
-  "description": "Minimal sample plugin for Opoha loader integration tests",
+  "version": "1.1.0",
+  "description": "Teaching sample — custom store-notes plugin (GraphQL, admin, events, jobs, plugin-owned TypeORM)",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -10,6 +10,10 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./database": {
+      "types": "./dist/database.d.ts",
+      "import": "./dist/database.js"
     }
   },
   "files": [
@@ -20,11 +24,11 @@
   ],
   "opoha": {
     "id": "sample",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "contractVersion": "0.1",
     "entry": "dist/index.js",
-    "displayName": "Sample Plugin",
-    "description": "Registers ping GraphQL, a permission, and PluginSampleEvent listener",
+    "displayName": "Sample Notes",
+    "description": "Teaching custom plugin — store notes with GraphQL, admin, events, jobs, and plugin-owned tables",
     "dependsOn": [],
     "required": false
   },
@@ -38,7 +42,10 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@opoha/plugin-sdk": "^1.0.0"
+    "@opoha/plugin-sdk": "^1.0.0",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "0.3.27",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@opoha/typescript-config": "^1.0.0",

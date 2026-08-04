@@ -1,10 +1,10 @@
 {
   "id": "sample",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "contractVersion": "0.1",
   "entry": "dist/index.js",
-  "displayName": "Sample Plugin",
-  "description": "Minimal sample for loader integration — ping query, permission, PluginSampleEvent",
+  "displayName": "Sample Notes",
+  "description": "Teaching custom plugin — store notes with GraphQL, admin, events, jobs, and plugin-owned tables",
   "dependsOn": [],
   "required": false
 }
