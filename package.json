@@ -1,7 +1,7 @@
 {
   "name": "@opoha/plugin-sample",
-  "version": "1.0.0",
- "description": "Minimal sample plugin for Opoha loader integration tests",
+  "version": "1.0.1",
+  "description": "Minimal sample plugin for Opoha loader integration tests",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -13,6 +13,8 @@
     }
   },
   "files": [
+    "LICENSE",
+    "README.md",
     "dist",
     "opoha.plugin.json"
   ],
